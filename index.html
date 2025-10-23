@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAX Test Portal</title>
+    <link rel="icon" href="/pages/img/logo/hax-icon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Tailwind gray-100 */
+        }
+        .logo {
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        .link-card {
+            background-color: #ffffff; /* Tailwind white */
+            border: 1px solid #e5e7eb; /* Tailwind gray-200 */
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        .link-card a {
+            text-decoration: none;
+            color: #2563eb; /* Tailwind blue-600 */
+            font-weight: 600;
+        }
+        .link-card a:hover {
+            color: #1d4ed8; /* Tailwind blue-700 */
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-6">
+    <!-- HAX Logo -->
+    <!-- <img src="./pages/img/logo/LOGO_HAX_GREEN.png" alt="HAX Logo" class="logo"> -->
+
+    <!-- Page Title -->
+    <h1 class="text-2xl font-bold text-gray-800 mb-6">App List</h1>
+
+    <!-- Links Section -->
+    <div class="w-full max-w-md">
+        <!-- Link to Registration -->
+        <div id="inventory-app"" class="link-card">
+            <a href="./pages/inventory-app/index.html">Inventory Management App</a>
+            <p class="text-sm text-gray-600 mt-2">Inventory management app using QR Codes</p>
+        </div>
+        
+    </div>
+
+    <!-- <script>
+        // Flags for each module
+        const flags = {
+            cadTest: false, // Set to false to hide the CAD Test link
+            mechanicalTest: false, // Set to false to hide the Mechanical Test link
+            electricalTest: false, // Set to false to hide the Electrical Test link
+            electronicsTest: false, // Set to false to hide the Electronics Test link
+            industialDesignTest: false, // Set to false to hide the Electronics Test link
+            resources: false, // Set to false to hide the Resources link
+            contact: true // Set to false to hide the Contact Us link
+        };
+
+        // Dynamically hide links based on flags
+        if (!flags.cadTest) {
+            document.getElementById('cad-test-link').style.display = 'none';
+        }
+        if (!flags.mechanicalTest) {
+            document.getElementById('mechanical-test-link').style.display = 'none';
+        }
+        if( !flags.electricalTest) {
+            document.getElementById('electrical-test-link').style.display = 'none';
+        }
+        if( !flags.electronicsTest) {
+            document.getElementById('electronics-test-link').style.display = 'none';
+        }
+        if (!flags.resources) {
+            document.getElementById('resources-link').style.display = 'none';
+        }
+        if (!flags.contact) {
+            document.getElementById('contact-link').style.display = 'none';
+        }
+        if (!flags.industialDesignTest) {
+            document.getElementById('id-test-link').style.display = 'none';
+        }
+    </script> -->
+</body>
+</html>
